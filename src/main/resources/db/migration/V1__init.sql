@@ -4,7 +4,7 @@ CREATE TABLE device_catalog
     brand VARCHAR(255) NOT NULL,
     model VARCHAR(255) NOT NULL,
     quantity  INT CHECK ( quantity > 0 ),
-    price DOUBLE PRECISION CHECK ( price > 0 ),
+    price DECIMAL CHECK ( price > 0 ),
     created_date DATE,
     updated_date DATE
 );
