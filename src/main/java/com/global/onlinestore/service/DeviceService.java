@@ -39,6 +39,7 @@ public class DeviceService {
     }
 
     public ResponseEntity<String> deleteDeviceById(Long id) {
+        getDeviceById(id);
         deviceRepository.deleteById(id);
 
         return ResponseEntity.ok("Device with id:" + id + " is delete");

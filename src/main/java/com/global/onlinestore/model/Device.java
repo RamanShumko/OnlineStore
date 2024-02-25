@@ -1,7 +1,10 @@
 package com.global.onlinestore.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
@@ -11,6 +14,9 @@ import java.util.Date;
 @Entity
 @Data
 @Table(name = "device_catalog")
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class Device {
 
     @Id
